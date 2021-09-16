@@ -63,10 +63,6 @@ PRODUCT_PACKAGES += \
     init.samsung.rc \
     init.usb_accessory.rc
 
-# LPM
-PRODUCT_PACKAGES += \
-    libsuspend
-
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
