@@ -58,7 +58,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.zram \
+    fstab.samsungexynos7570 \
     init.samsung.rc \
     init.usb_accessory.rc
 
