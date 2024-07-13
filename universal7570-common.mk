@@ -93,14 +93,14 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.samsung-9810
+    android.hardware.power@1.3-service.samsung-7570
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/powerhint.json
 
 # Recovery
 PRODUCT_PACKAGES += \
-    init.recovery.samsungexynos9810.rc
+    init.recovery.samsungexynos7570.rc
 
 # SamsungDoze
 PRODUCT_PACKAGES += \
@@ -108,7 +108,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.9810
+    lineage.touch@1.0-service.7570
 
 # Trust HAL
 PRODUCT_PACKAGES += \
@@ -116,11 +116,11 @@ PRODUCT_PACKAGES += \
 
 # FastCharge
 PRODUCT_PACKAGES += \
-    lineage.fastcharge@1.0-service.9810
+    lineage.fastcharge@1.0-service.7570
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.9810
+    android.hardware.light@2.0-service.7570
 
 # S-Pen
 PRODUCT_COPY_FILES += \
@@ -137,4 +137,4 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 -include $(LOCAL_PATH)/product_prop.mk
 
 # Call proprietary blob setup
-$(call inherit-product, vendor/samsung/universal9810-common/universal9810-common-vendor.mk)
+$(call inherit-product, vendor/samsung/universal7570-common/universal7570-common-vendor.mk)
