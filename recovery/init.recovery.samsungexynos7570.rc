@@ -11,12 +11,23 @@ on fs
     symlink /dev/block/bootdevice/by-name/VENDOR /dev/block/bootdevice/by-name/vendor
     symlink /dev/block/bootdevice/by-name/CACHE /dev/block/bootdevice/by-name/cache
 
+    # USB
+    write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/idVendor 18D1
+    write /sys/class/android_usb/android0/idProduct D001
+    write /sys/class/android_usb/android0/f_ffs/aliases adb
+    write /sys/class/android_usb/android0/functions adb
+    write /sys/class/android_usb/android0/iManufacturer ${ro.product.manufacturer}
+    write /sys/class/android_usb/android0/iProduct ${ro.product.model}
+    write /sys/class/android_usb/android0/iSerial ${ro.serialno}
+
 on post-fs
     write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "Conf 1"
     chmod 0444 /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration
 
 on property:sys.usb.ffs.ready=0 && property:sys.usb.config=none
     write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/bDeviceClass 0
 
 on property:sys.usb.ffs.ready=1 && property:sys.usb.config=sideload
     write /sys/class/android_usb/android0/enable 0
