@@ -1,6 +1,6 @@
 def FullOTA_Assertions(info):
     info.script.AppendExtra('ifelse(is_mounted("/vendor"), unmount("/vendor"));');
-    info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/platform/11120000.ufs/by-name/VENDOR", "/vendor");');
+    info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/platform/13540000.dwmmc0/by-name/VENDOR", "/vendor");');
     info.script.AppendExtra('ifelse(file_getprop("/vendor/build.prop","ro.vendor.build.version.sdk") != "29",');
     info.script.AppendExtra('unmount("/vendor");');
     info.script.AppendExtra('ui_print(" ");');
