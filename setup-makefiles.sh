@@ -1,16 +1,16 @@
 #!/bin/bash
 #
-# Copyright (C) 2017-2021 The LineageOS Project
+# Copyright (C) 2017-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 set -e
 
-DEVICE_COMMON=universal7870-common
+DEVICE_COMMON=universal7570-common
 VENDOR=samsung
 
-export INITIAL_COPYRIGHT_YEAR=2017
+export INITIAL_COPYRIGHT_YEAR=2025
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -29,7 +29,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 
 # Warning headers and guards
-write_headers "a3y17lte a5y17lte a6lte j6lte j7velte j7xelte j7y17lte on7xelte"
+write_headers "j4lte"
 
 # The standard blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
