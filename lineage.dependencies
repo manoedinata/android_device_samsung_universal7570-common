@@ -1,5 +1,8 @@
 [
-
+    {
+        "repository": "android_kernel_samsung_universal7570",
+        "target_path": "kernel/samsung/universal7570"
+    },
     {
         "repository": "android_packages_resources_devicesettings",
         "target_path": "packages/resources/devicesettings"
