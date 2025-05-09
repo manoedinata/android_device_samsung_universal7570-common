@@ -1,12 +1,12 @@
 #!/bin/bash
-# # Copyright (C) 2017-2021 The LineageOS Project
+# # Copyright (C) 2017-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 set -e
 
-DEVICE_COMMON=universal7870-common
+DEVICE_COMMON=universal7570-common
 VENDOR=samsung
 
 # Load extract_utils and do some sanity checks

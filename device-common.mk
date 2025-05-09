@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019-2025 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/universal7870-common
+LOCAL_PATH := device/samsung/universal7570-common
 
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
@@ -73,7 +73,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     audio.a2dp.default \
     audio.usb.default \
-    audio.primary.universal7870_32 \
+    audio.primary.universal7570 \
     audio.r_submix.default \
     libtinycompress 
 
@@ -109,7 +109,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service  \
     android.hardware.graphics.composer@2.1-resources.vendor \
-    android.hardware.graphics.composer@2.1-service.universal7870 \
+    android.hardware.graphics.composer@2.1-service.universal7570 \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
@@ -206,14 +206,14 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.samsungexynos7870 \
+    fstab.samsungexynos7570 \
     init.baseband.rc \
-    init.samsungexynos7870.rc \
-    init.samsungexynos7870.usb.rc \
+    init.samsungexynos7570.rc \
+    init.samsungexynos7570.usb.rc \
     init.vendor.rilchip.rc \
     init.vendor.rilcommon.rc \
     init.wifi.rc \
-    ueventd.samsungexynos7870.rc
+    ueventd.samsungexynos7570.rc
 
 # Recorder
 PRODUCT_PACKAGES += \
@@ -231,7 +231,7 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service.universal7870 \
+    android.hardware.sensors@1.0-service.universal7570 \
     libsensorndkbridge \
     libshim_sensorndkbridge
 
@@ -287,4 +287,4 @@ PRODUCT_PACKAGES += \
 $(shell cp -r device/samsung/universal7870-common/configs/clang/ld prebuilts/clang/host/linux-x86/clang-r383902b/bin)
 
 # call the proprietary setup
-$(call inherit-product, vendor/samsung/universal7870-common/universal7870-common-vendor.mk)
+$(call inherit-product, vendor/samsung/universal7570-common/universal7570-common-vendor.mk)

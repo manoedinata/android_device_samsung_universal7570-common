@@ -34,9 +34,9 @@ product/lib64/libaptX_encoder.so
 product/lib64/libaptXHD_encoder.so
 
 # Camera
-vendor/lib/hw/camera.universal7870.so
+vendor/lib/hw/camera.universal7570.so
 vendor/lib/hw/camera.exynos5.so
-vendor/lib64/hw/camera.universal7870.so
+vendor/lib64/hw/camera.universal7570.so
 vendor/lib/libcamera_client.so
 vendor/lib/libgui.so
 
@@ -203,5 +203,5 @@ vendor/lib64/libsensorndkbridge.so
 
 # Thermal
 vendor/bin/hw/android.hardware.thermal@1.0-service
-vendor/lib/hw/thermal.universal7870.so
-vendor/lib64/hw/thermal.universal7870.so
+vendor/lib/hw/thermal.universal7570.so
+vendor/lib64/hw/thermal.universal7570.so
