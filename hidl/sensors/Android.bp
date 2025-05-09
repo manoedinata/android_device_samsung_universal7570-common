@@ -1,5 +1,5 @@
 cc_binary {
-    name: "android.hardware.sensors@1.0-service.universal7870",
+    name: "android.hardware.sensors@1.0-service.universal7570",
     stem: "android.hardware.sensors@1.0-service",
     relative_install_path: "hw",
     vendor: true,

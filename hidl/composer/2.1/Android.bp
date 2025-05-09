@@ -1,5 +1,5 @@
 cc_binary {
-    name: "android.hardware.graphics.composer@2.1-service.universal7870",
+    name: "android.hardware.graphics.composer@2.1-service.universal7570",
     stem: "android.hardware.graphics.composer@2.1-service",
     defaults: ["hidl_defaults"],
     vendor: true,
